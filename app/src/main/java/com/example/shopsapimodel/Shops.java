@@ -195,12 +195,30 @@ public class Shops {
     @SerializedName("total_tip_received")
     private String totalTipReceived;
 
-//    "total_tip_received": "0.00",
-//            "total_weight": 0,
-//            "updated_at": "2022-07-10T22:50:46+00:00",
-//            "user_id": null,
-//            "discount_applications": [],
-//            "fulfillments": [],
+    @SerializedName("total_weight")
+    private Integer totalWeight;
 
+    @SerializedName("updated_at")
+    private String updatedAt;
+
+    @SerializedName("user-id")
+    private String userId;
+
+    @SerializedName("discount_applications")
+    private ArrayList<String> discountApplications;
+
+    private ArrayList<String> fulfillments;
+
+
+    @SerializedName("line_items")
+    private ArrayList<LineItems> lineItems;
+
+    @SerializedName("origin_location")
+    private OriginLocation originLocation;
+
+    @SerializedName("payment_terms")
+    private String paymentTerms;
+
+    private ArrayList<String> refunds;
 
 }
